@@ -12,14 +12,7 @@ public abstract class VehiculoAereo extends Vehiculo implements Aereo{
      */
 	public String volar(){
 		return "Haciendo piruetas\n";
-	};
-	 
-
-	
-	/** 
-	 * @return String
-	 */
-	public String toString(){
+	}	public String toString(){
 		return super.toString()+"Forma de Volar: "+this.volar()+"\n";
 	}
 
@@ -30,5 +23,4 @@ public abstract class VehiculoAereo extends Vehiculo implements Aereo{
 	public VehiculoAereo(String matricula, String marca, String modelo, String color, float kilometros, int numPuertas,
 			int numPlazas) {
 		super(matricula, marca, modelo, color, kilometros, numPuertas, numPlazas);
-	};
-}
+	}}

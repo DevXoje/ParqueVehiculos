@@ -52,11 +52,6 @@ public abstract class Vehiculo {
         numVehiculos++;
     }
 
-    
-    /** 
-     * @param getMatricula(
-     * @return String
-     */
     /**
      * Este metodo muestra un texto representando la accion de acelerar del vehiculo
      * 
@@ -65,10 +60,6 @@ public abstract class Vehiculo {
     abstract public String acelerar();
 
     
-    /** 
-     * @param getMatricula(
-     * @return String
-     */
     /**
      * Este metodo muestra un texto representando la accion de arracancar del
      * vehiculo
@@ -79,7 +70,6 @@ public abstract class Vehiculo {
 
     
     /** 
-     * @param getMatricula(
      * @return String
      */
     /**

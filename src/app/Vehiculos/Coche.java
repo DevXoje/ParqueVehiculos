@@ -24,28 +24,19 @@ public class Coche extends VehiculoTerrestre {
 		this.numAirbags = numAirbags;
 		this.tieneTechoSolar = tieneTechoSolar;
 		this.tieneRadio = tieneRadio;
-	}
+	}	
 
-	
-	/** 
-	 * @return String
-	 */
 	@Override
 	public String acelerar() {
 		return "Pisar pedal derecho";
 
 	}
-
 	
 	@Override
 	public String circula() {
 		return "Por la derecha y hasta 120 km/h";
 	}
 
-	
-	/** 
-	 * @return String
-	 */
 	@Override
 	public String frenar() {
 		return "Pisar pedal izquierdo";
@@ -56,8 +47,6 @@ public class Coche extends VehiculoTerrestre {
 	/** 
 	 * @return int
 	 */
-	/* Getter-Setter */
-
 	public int getNumAirbags() {
 		return numAirbags;
 	}

@@ -39,5 +39,4 @@ public abstract class VehiculoTerrestre extends Vehiculo implements Terrestre{
 
 	public VehiculoTerrestre() {
 		super();
-	};
-}
+	}}
