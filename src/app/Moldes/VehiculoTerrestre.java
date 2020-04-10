@@ -2,7 +2,11 @@ package app.Moldes;
 import app.Acciones.Terrestre;
 import app.Vehiculo;
 /**
- * VehiculoTerreste
+ * VehiculoTerreste hace de molde para Clases que quieran ser Vehiculo y Terrestres
+ * @author      Xoje Vilches
+ * @version     1.0
+ * @since       2020-05-05
+ *
  */
 public abstract class VehiculoTerrestre extends Vehiculo implements Terrestre{
 

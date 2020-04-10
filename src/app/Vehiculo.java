@@ -2,6 +2,10 @@ package app;
 
 /**
  * Datos basicos de cualquier Vehiculo
+ * @author      Xoje Vilches
+ * @version     1.0
+ * @since       2020-05-05
+ *
  */
 public abstract class Vehiculo {
 

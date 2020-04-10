@@ -4,7 +4,10 @@
 package app.Acciones;
 
 /**
- * @author Procastinar
+ * Terreste implementa la accion de circula
+ * @author      Xoje Vilches
+ * @version     1.0
+ * @since       2020-05-05
  *
  */
 public interface Terrestre {

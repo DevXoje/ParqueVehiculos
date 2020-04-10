@@ -2,7 +2,11 @@ package app.Moldes;
 import app.Acciones.Aereo;
 import app.Vehiculo;
 /**
- * VehiculoAero
+ * VehiculoAero hace de molde para Clases que quieran ser Vehiculo y Aereo
+ * @author      Xoje Vilches
+ * @version     1.0
+ * @since       2020-05-05
+ *
  */
 public abstract class VehiculoAereo extends Vehiculo implements Aereo{
 	/**

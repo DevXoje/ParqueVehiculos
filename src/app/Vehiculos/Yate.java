@@ -3,7 +3,11 @@ package app.Vehiculos;
 import app.Moldes.VehiculoMaritimo;
 
 /**
- * Yate
+ * Yate VehiculoMaritimo implementado, con caracteristicas propias 
+ * @author      Xoje Vilches
+ * @version     1.0
+ * @since       2020-05-05
+ *
  */
 public class Yate extends VehiculoMaritimo {
 

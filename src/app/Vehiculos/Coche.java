@@ -3,7 +3,11 @@ package app.Vehiculos;
 import app.Moldes.VehiculoTerrestre;
 
 /**
- * Coche
+ * Autobus Vehiculoterrestes implementado, con caracteristicas propias 
+ * @author      Xoje Vilches
+ * @version     1.0
+ * @since       2020-05-05
+ *
  */
 public class Coche extends VehiculoTerrestre {
 
@@ -16,8 +20,7 @@ public class Coche extends VehiculoTerrestre {
 		this.tieneRadio = false;
 	}
 
-	
-	/* Constructores */
+
 	public Coche(String matricula, String marca, String modelo, String color, float kilometros, int numPuertas,
 			int numPlazas, int numAirbags, boolean tieneTechoSolar, boolean tieneRadio) {
 		super(matricula, marca, modelo, color, kilometros, numPuertas, numPlazas);

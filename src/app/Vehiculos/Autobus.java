@@ -1,7 +1,11 @@
 package app.Vehiculos;
 import app.Moldes.VehiculoTerrestre;
 /**
- * Autobus
+ * Autobus Vehiculoterrestes implementado, con caracteristicas propias 
+ * @author      Xoje Vilches
+ * @version     1.0
+ * @since       2020-05-05
+ *
  */
 public class Autobus extends VehiculoTerrestre{
 

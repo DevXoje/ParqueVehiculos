@@ -2,7 +2,11 @@ package app.Moldes;
 import app.Acciones.Maritimo;
 import app.Vehiculo;
 /**
- * VehiculoMaritimo
+ * VehiculoAero hace de molde para Clases que quieran ser Vehiculo y Maritimas
+ * @author      Xoje Vilches
+ * @version     1.0
+ * @since       2020-05-05
+ *
  */
 public abstract class VehiculoMaritimo extends Vehiculo implements Maritimo {
 	public VehiculoMaritimo() {
