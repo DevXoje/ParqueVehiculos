@@ -97,7 +97,7 @@ public class Coche extends VehiculoTerrestre {
 	 */
 	@Override
 	public String toString() {
-		return super.toString() +"\nATRIBUTOS POR SER COCHE"
+		return super.toString() +"\nATRIBUTOS POR SER COCHE\n"
 				+"\nNumero de Airbags:" + numAirbags 
 				+ "\nTener Radio: "+ tieneRadio 
 				+ "\nTiene TechoSolar: "+ tieneTechoSolar+"\n";

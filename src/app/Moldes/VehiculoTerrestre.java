@@ -33,7 +33,9 @@ public abstract class VehiculoTerrestre extends Vehiculo implements Terrestre{
 	 * @return String
 	 */
 	public String toString(){
-		return super.toString()+"\t\tMETODOS POR SER VEHICULO\nArrancar: "+this.arrancar()+"\nCircular: "+this.circula()+"\nAparcar: "+this.aparcar()+"\n\t\tMETODOS POR SER TERRESTRE\nForma de Circulacion: "+this.circula()+"\nForma de Aparcar: "+aparcar()+"\n";
+		return super.toString()	+"\nMETODOS POR SER VEHICULO TERRESTRE\n"
+				+"\nForma de Circulacion: "+this.circula()
+				+"\nForma de Aparcar: "+aparcar()+"\n";
 	}
 
 	public VehiculoTerrestre(String matricula, String marca, String modelo, String color, float kilometros,

@@ -90,11 +90,11 @@ public class Yate extends VehiculoMaritimo {
 	}
 	@Override
 	public String toString() {
-		return super.toString()+"ATRIBUTOS POR SER YATE"
+		return super.toString()+"ATRIBUTOS POR SER YATE\n"
 				+"\nTener cocina: " + tieneCocina 
 				+ "\nNumero de Motores: " + numMotores 
 				+ "\nMetros de eslora: " + metrosEslora
-				+ "\nMETODOS POR SER YATE"
+				+ "\nMETODOS POR SER YATE\n"
 				+"\nAtracar: "+atracar()
 				+"\nZarpar: "+zarpar();
 	}

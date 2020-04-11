@@ -86,10 +86,10 @@ public class Autobus extends VehiculoTerrestre{
 	 */
 	@Override
 	public String toString() {
-		return super.toString()+"\nATRIBUTOS POR SER AUTOBUS"
+		return super.toString()+"\nATRIBUTOS POR SER AUTOBUS\n"
 				+"\nAutobus Escolar: " + esEscolar 
 				+ "\nTipo de Recorrido: " + tipoRecorrido 
-				+ "\n\nMETODOS POR SER AUTOBUS"
+				+ "\n\nMETODOS POR SER AUTOBUS\n"
 				+"\nEl autobus puede: "+abrirPuertas()+"\n";
 	}
 	

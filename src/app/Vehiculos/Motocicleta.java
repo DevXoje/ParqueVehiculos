@@ -72,10 +72,10 @@ public class Motocicleta extends VehiculoTerrestre{
 	 */
 	@Override
 	public String toString() {
-		return super.toString()+"\t\tATRIBUTOS POR SER MOTO"
-				+"\nPotencia Motor: " + potenciaMotor 
+		return super.toString()+"\nATRIBUTOS POR SER MOTO\n"
+				+"\nPotencia Motor: " + potenciaMotor+" W" 
 				+ "\nTiene Maletero: " + tieneMaletero 
-				+ "\nMETODOS POR SER MOTO"
+				+ "\nMETODOS POR SER MOTO\n"
 				+"\nLa moto puede: "+brincar()+"\n";
 	}
 

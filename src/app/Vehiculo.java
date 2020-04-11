@@ -202,16 +202,16 @@ public abstract class Vehiculo {
     public String toString() {
         String output;
 
-        output = "\nATRIBUTOS POR SER VEHICULO"
-        		+"\\nTipo de Vehiculo: " + this.getClass().getSimpleName()
+        output = "\nATRIBUTOS POR SER VEHICULO\n"
+        		+"\nTipo de Vehiculo: " + this.getClass().getSimpleName()
                 + "\nMatricula: " + this.matricula 
                 + "\nMarca: " + this.marca 
                 + "\nModelo: " + this.modelo 
                 + "\nColor: "+ this.color 
-                + "\nCuentakilometros: " + this.kilometros 
+                + "\nCuentakilometros: " + this.kilometros+" Km" 
                 + "\nNumero de puertas: " + this.numPuertas
-                + "\nNumero de plazas: " + this.numPlazas 
-                + "\nMETODOS POR SER VEHICULO"+
+                + "\nNumero de plazas: " + this.numPlazas+"\n" 
+                + "\nMETODOS POR SER VEHICULO\n"+
                 "\nSu forma de arrancar: " + this.arrancar()
                 + "\nSu forma de acelerar: " + this.acelerar() 
                 + "\nSu forma de frenar: " + this.frenar() + "\n";

@@ -96,8 +96,12 @@ public class Avioneta extends VehiculoAereo {
 	 */
 	@Override
 	public String toString() {
-		return super.toString() + "Aeropuerto: " + aeropuerto + "\nCarga Maxima: " + maxKg + " kg\nForma de despegar: "
-				+ despegar() + "\nForma de aterrizar " + aterrizar() + "\n";
+		return super.toString() + "\nATRIBUTOS POR SER AVIONETA"
+				+"\nAeropuerto: " + aeropuerto 
+				+ "\nCarga Maxima: " + maxKg + " kg"
+				+"\nMETDOOS POR SER AVIONETA\n"
+				+"\nForma de despegar: "+ despegar() 
+				+ "\nForma de aterrizar " + aterrizar() + "\n";
 	}
 
 }

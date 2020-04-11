@@ -15,9 +15,10 @@ import javax.swing.JOptionPane;
  * @since       2020-05-05
  *
  */
-public class Parque {
+public class Parque{
 
 	static ArrayList<Vehiculo> megaConcesionario = new ArrayList<Vehiculo>();
+	
 
 	
 	/** 
@@ -59,7 +60,7 @@ public class Parque {
 			switch (opc) {
 				case 1:
 					if (comprobarLimite()) {
-						creacionCustom=isConCaracteristicas(new Coche());
+						creacionCustom=isConCaracteristicas("Coche");
 						if (creacionCustom) {
 							matriculaNueva = setCadena("Introduzca la matricula");
 							marcaNueva = setCadena("Introduzca la marca");
@@ -86,7 +87,7 @@ public class Parque {
 					break;
 				case 2:
 					if (comprobarLimite()) {
-						creacionCustom=isConCaracteristicas(new Autobus());
+						creacionCustom=isConCaracteristicas("Autobus");
 						if (creacionCustom) {
 							matriculaNueva = setCadena("Introduzca la matricula");
 							marcaNueva = setCadena("Introduzca la marca");
@@ -111,7 +112,7 @@ public class Parque {
 					break;
 				case 3:
 					if (comprobarLimite()) {
-						creacionCustom=isConCaracteristicas(new Motocicleta());
+						creacionCustom=isConCaracteristicas("Motocicleta");
 						if (creacionCustom) {
 							matriculaNueva = setCadena("Introduzca la matricula");
 							marcaNueva = setCadena("Introduzca la marca");
@@ -135,7 +136,7 @@ public class Parque {
 					break;
 				case 4:
 					if (comprobarLimite()) {
-						creacionCustom=isConCaracteristicas(new Avioneta());
+						creacionCustom=isConCaracteristicas("Avioneta");
 						if (creacionCustom) {
 							matriculaNueva = setCadena("Introduzca la matricula");
 							marcaNueva = setCadena("Introduzca la marca");
@@ -159,7 +160,7 @@ public class Parque {
 					break;
 				case 5:
 					if (comprobarLimite()) {
-						creacionCustom=isConCaracteristicas(new Yate());
+						creacionCustom=isConCaracteristicas("Yate");
 						if (creacionCustom) {
 							matriculaNueva = setCadena("Introduzca la matricula");
 							marcaNueva = setCadena("Introduzca la marca");
@@ -197,6 +198,8 @@ public class Parque {
 
 		despedida();
 	}
+
+	
 
 	/**
 	 * Este metodo muestra un texto al usuario, recoje su mensaje del usuario y lo
@@ -286,10 +289,11 @@ public class Parque {
 	 * Este metodo muestra un texto especifico al usuario, recoje opcion boolean
 	 * 
 	 * @return boolean opcion elegida por el usuario
-	 */
-	private static boolean isConCaracteristicas(Vehiculo v) {
+	 */	
+	private static boolean isConCaracteristicas(String nombreVehiculo) {
 		boolean ser = setBooleano(
-				"¿Desea el diseñar el vehiculo: "+v.getClass().getSimpleName()+" paso a paso?");
+				"¿Desea el diseñar el vehiculo: "+nombreVehiculo+" paso a paso?");
+	
 		return ser;
 	}
 
@@ -318,6 +322,8 @@ public class Parque {
 	private static boolean comprobarLimite() {
 
 		if (Vehiculo.numVehiculos < Vehiculo.maxVehiculos) {
+			JOptionPane.showMessageDialog(null,"Capacidad Total: "+Vehiculo.maxVehiculos
+			+"\nVehiculos Antes de la Nueva Creacion: "+Vehiculo.numVehiculos);
 			return true;
 		} else {
 			JOptionPane.showMessageDialog(null, "No se pueden crear más coches, límite alcanzado");
